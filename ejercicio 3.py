@@ -39,6 +39,13 @@ listageneral.append(Machupichu)
 listageneral.append(Lamuerte)
 listageneral.append(Atrapado)
 listageneral.append(Calavera)
+listanombre.append(Halconmilenario.nombre)
+listanombre.append(Estrelladelamuerte.nombre)
+listanombre.append(Machupichu.nombre)
+listanombre.append(Lamuerte.nombre)
+listanombre.append(Atrapado.nombre)
+listanombre.append(Calavera.nombre)
+
 
 #Apartado 1
 print("\nMostrando información Halcon Milenario: ")
@@ -64,11 +71,33 @@ print(listatripulacion[0])
 print("La nave con mayor tripulacion es Calavera")
 
 #Apartado 4
+for i in listanombre:
+    if i[0]=="A" and i[1]=="t":
+      print(i)
+    else:
+        continue
+
 
 
 #Apartado 5
+print("\nComo se puede ver, todas las naves pueden llevar más de seis pasajeros: ",listacantidadpasajeros)
+
+
+
+#Apartado 6
 listalargo.sort(reverse= True)
-print("\nLa nave con mayor longitud es la Estrella de la Muerte con una longitud de : ",listalargo[-1])
+print(listalargo)
+print("\nLa nave mas pequeña es La Muerte con una longitud de : ",listalargo[-1])
+print("\nMostrando información de La Muerte: ")
+print("\nLongitud: ",Lamuerte.largo)
+print("\nTripulacion: ",Lamuerte.tripulacion)
+print("\nCantidad de pasajeros: ",Lamuerte.cantidadpasajeros)
+print("\nLa nave mas grande es La Estrella de la Muerte con una longitud de : ",listalargo[0])
+print("\nMostrando información de La Estrella de la Muerte: ")
+print("\nLongitud: ",Estrelladelamuerte.largo)
+print("\nTripulacion: ",Estrelladelamuerte.tripulacion)
+print("\nCantidad de pasajeros: ",Estrelladelamuerte.cantidadpasajeros)
+
 
 
 
